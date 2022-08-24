@@ -33,8 +33,11 @@ console.log("Aufgabe3");
 function maxItems(dataNum) {
     let input = [];
     for (let i = 0; i < dataNum.length; i++) {
-        dataNum
-        if(dataNum[1]>= )
+        sumArray = dataNum[0];
+        if (dataNum[1] >= sumArray) {
+            // show amout of ithems i can buy
+        }
     }
+    console.log(dataNum[0]);
 }
 maxItems(["1", "1", "2"], "3");
