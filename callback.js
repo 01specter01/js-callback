@@ -60,3 +60,12 @@ function getSquaredNumbersFromArray(array, getSquaredNumber) {
 }
 getSquaredNumber(2); // 4
 getSquaredNumbersFromArray(array, getSquaredNumber); // 1, 4, 9, 16
+
+console.log(2.1);
+const array1 = [1, 2, 3, 4, 5, 6];
+function getSumOfArray(array1) {
+    if (array1.length === 0) return 0;
+
+    return array1[0] + getSumOfArray(array1.slice(1));
+}
+console.log(getSumOfArray([1, 2, 3, 4])); // 21
