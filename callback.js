@@ -14,7 +14,6 @@ greetUsers(["John", "Peter", "Mark"], greetMessage);
 // "Guten Morgen, Markus"
 ```
 ​*/
-console.log(1.1);
 
 // const greetUsers = [`John, Parker, Mark`];
 // greetUsers.forEach((greetUsers) => {
@@ -27,6 +26,7 @@ console.log(1.1);
 
 // greetUsers(["John", "Peter", "Mark"], greetMessage);
 
+console.log(1.1);
 function test(nameFirst) {
     const greeting = "Guten Morgen, " + nameFirst;
     console.log(greeting);
