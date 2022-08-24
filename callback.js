@@ -26,17 +26,6 @@ console.log(1.1);
 // };
 
 // greetUsers(["John", "Peter", "Mark"], greetMessage);
-/* 1.2
-​
--   Schreibe eine Funktion getSquaredNumber, die die Quadratzahl einer gegebenen Zahl zurückgibt.
--   Schreibe eine weitere Funktion getSquaredNumbersFromArray, welche ein Array mit Zahlen und die Funktion getSquaredNumber (callback) als Parameter erhält und die Quadratzahl jeder Zahl im Array zurückgibt.
-​
-```javascript
-const array = [1, 2, 3, 4];
-getSquaredNumber(2); // 4
-getSquaredNumbersFromArray(array, getSquaredNumber); // 1, 4, 9, 16
-```
-*/
 
 function test(nameFirst) {
     const greeting = "Guten Morgen, " + nameFirst;
@@ -48,3 +37,26 @@ function user(arr, callback) {
     arr.forEach(callback);
 }
 user(word, test);
+
+/* 1.2
+​
+-   Schreibe eine Funktion getSquaredNumber, die die Quadratzahl einer gegebenen Zahl zurückgibt.
+-   Schreibe eine weitere Funktion getSquaredNumbersFromArray, welche ein Array mit Zahlen und die Funktion getSquaredNumber (callback) als Parameter erhält und die Quadratzahl jeder Zahl im Array zurückgibt.
+​
+```javascript
+const array = [1, 2, 3, 4];
+getSquaredNumber(2); // 4
+getSquaredNumbersFromArray(array, getSquaredNumber); // 1, 4, 9, 16
+```
+*/
+console.log(1.2);
+
+const array = [1, 2, 3, 4];
+function getSquaredNumber(num) {
+    console.log(num * num);
+}
+function getSquaredNumbersFromArray(array, getSquaredNumber) {
+    array.map(getSquaredNumber);
+}
+getSquaredNumber(2); // 4
+getSquaredNumbersFromArray(array, getSquaredNumber); // 1, 4, 9, 16
