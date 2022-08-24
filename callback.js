@@ -38,11 +38,13 @@ getSquaredNumbersFromArray(array, getSquaredNumber); // 1, 4, 9, 16
 ```
 */
 
-function test(word) {
-    word();
+function test(nameFirst) {
+    const greeting = "Guten Morgen, " + nameFirst;
+    console.log(greeting);
 }
-var word = ["John", "Peter", "Markus", "Leo"],
-    message = "Guten Morgen, ";
-word.forEach(function (word) {
-    console.log(message, word);
-});
+
+var word = ["John", "Peter", "Markus", "Leo"];
+function user(arr, callback) {
+    arr.forEach(callback);
+}
+user(word, test);
